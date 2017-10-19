@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block body %}
+    <h2>{{the_title}}</h2>
+    <form action="/calculate/" method="post">
+        <table>
+            <p>Utilice este formulario para enviar los datos para calcular el perimetro</p>
+            <tr>
+                <td>a:</td>
+                <td><input type="number" name="a"></input></td>
+            </tr>
+            <tr>
+                <td>b:</td>
+                <td><input type="number" name="b"></input></td>
+            </tr>
+	    	<p>Cuando esté listo, haga clic en este botón: </p>
+		<p><input type="submit" name="btn_calculate" value="Calcular"></input></p>
+        </table>
+        </form>
+{% endblock %}
